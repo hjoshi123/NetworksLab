@@ -1,0 +1,8 @@
+title= error_rate vs throughput(FTP)
+title_x= error_rate(%)
+title_y=  throughput (bytes per second)
+color = blue
+
+0.02 33415
+0.01 37575
+0.00 39164

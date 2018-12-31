@@ -14,8 +14,8 @@ int checksum(string s, int check) {
   // temp << 8 shifts 8 bits so that the other 8 bits can be appended
   // for example Fo implies 46--. To add -- we use temp << 8
   for (int i = 0; i < n; i++) {\
-    temp=s[i*2];
-    temp= (temp << 8) + s[(i*2)+1];
+    temp = s[i*2];
+    temp = (temp << 8) + s[(i*2)+1];
     sum += temp;
   }
   

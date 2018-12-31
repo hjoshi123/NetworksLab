@@ -18,7 +18,9 @@ int main() {
         cout << "Enter no of packets coming at second " << i + 1 << "\n";
         cin>> inp[i];
 
-        cout << "Enter 0 to quit and 1 to continue\n ";
+        i++;
+
+        cout << "Enter 0 to quit and 1 to continue\n";
         cin >> ch;
     } while (ch);
     noOfSec = i;
@@ -26,7 +28,7 @@ int main() {
     cout<<"\nSecond \tReceived \tSent \tDropped \tRemained \n";
     for (i = 0; count || i < noOfSec; i++) {
         cout << i + 1;
-        cout << "\t" << inp[i];
+        cout << "\t" << inp[i] << "\t";
         cout << "\t" << (MIN((inp[i] + count), orate));
         if ((x = inp[i] + count - orate) > 0) {
             if (x > sizeBucket) {
@@ -40,7 +42,7 @@ int main() {
             count = 0;
             drop = 0;
         }
-        cout << "\t" << drop << "\t" << count;
+        cout << "\t" << drop << "\t" << count << "\n";
     }
     return 0;
 }
